@@ -1,6 +1,8 @@
 pandas>=3.0
 numpy>=2.0
-scikit-learn>=1.9
+# 저장한 모델(joblib)은 학습한 버전과 같은 scikit-learn에서 불러와야 하므로 버전 고정
+scikit-learn==1.9.1
+scipy>=1.14
 matplotlib>=3.10
 seaborn>=0.13
 xgboost>=3.0

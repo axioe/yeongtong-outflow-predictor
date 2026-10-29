@@ -6,10 +6,12 @@
 # - 화면 1: 행정동·월을 고르고 입력값(가격 변동률 등)을 바꿔 가며 유출 확률·위험등급 확인
 # - 화면 2: 선택한 월의 12개 행정동 위험 순위
 # - 앱 화면 글자는 보고서 캡처용으로 한국어 사용 (코드 이름은 영어 유지)
+# - streamlit run은 .py 파일만 실행할 수 있어서 이 파일만 노트북이 아닌 .py로 둠
 #
 # 사전설치 : pip install streamlit
 # 실행 : 터미널에서 ML 폴더로 이동 후  streamlit run code/06_streamlit_app.py
 #        (# %% 셀 실행이나 python 실행으로는 화면이 뜨지 않음)
+# 배포 : Streamlit Cloud에서 Main file path를 code/06_streamlit_app.py로 지정
 
 # %%
 from pathlib import Path
@@ -19,13 +21,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import streamlit as st
+from matplotlib import font_manager
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "데이터_csv"
 MODEL_DIR = BASE_DIR / "model"
 
 # 폰트지정 (그래프에 한글이 들어가므로 필요)
-plt.rcParams["font.family"] = "Malgun Gothic"
+# Windows는 맑은 고딕, Streamlit Cloud(Linux)는 packages.txt로 설치한 나눔고딕 사용
+installed_fonts = {f.name for f in font_manager.fontManager.ttflist}
+plt.rcParams["font.family"] = next((f for f in ["Malgun Gothic", "NanumGothic"] if f in installed_fonts), "sans-serif")
 # 마이너스 부호 깨짐 지정
 plt.rcParams["axes.unicode_minus"] = False
 

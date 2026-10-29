@@ -1,5 +1,5 @@
 ﻿model,best_cv_roc_auc,test_Accuracy,test_Precision,test_Recall,test_F1,test_ROC-AUC,train_Accuracy,train_ROC-AUC,gap_Accuracy,gap_ROC-AUC,n_combinations,seconds,best_params
 Random Forest (broad),0.6755,0.6458,0.6742,0.7317,0.7018,0.6424,1.0,1.0,0.3542,0.3576,108,45.6,"{'max_depth': 10, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 500}"
-Random Forest (regularized),0.6613,0.6111,0.63,0.7683,0.6923,0.6467,0.7763,0.876,0.1652,0.2293,54,26.5,"{'max_depth': 2, 'min_samples_leaf': 5, 'min_samples_split': 20, 'n_estimators': 200}"
+Random Forest (regularized),0.6613,0.6111,0.63,0.7683,0.6923,0.6467,0.7763,0.876,0.1652,0.2293,54,25.2,"{'max_depth': 2, 'min_samples_leaf': 5, 'min_samples_split': 20, 'n_estimators': 200}"
 Logistic Regression,0.6827,0.5833,0.6038,0.7805,0.6809,0.6101,0.8202,0.9035,0.2368,0.2933,5,0.2,{'C': 10}
 XGBoost,0.72,0.6458,0.6742,0.7317,0.7018,0.6414,0.8509,0.9532,0.205,0.3117,96,14.1,"{'colsample_bytree': 1, 'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 100, 'reg_lambda': 1, 'subsample': 1}"

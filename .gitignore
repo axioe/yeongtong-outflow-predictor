@@ -1,8 +1,11 @@
-# 코드와 데이터만 올리고 나머지(보고서, 원본 엑셀, 예시 자료, 그림, 모델 등)는 제외
+# 코드·데이터·모델(Streamlit 배포용)만 올리고 나머지(보고서, 원본 엑셀, 예시 자료, 그림 등)는 제외
 /*
 !/.gitignore
 !/code/
 !/데이터_csv/
+!/model/
+!/packages.txt
 
 __pycache__/
 *.pyc
+.ipynb_checkpoints/
