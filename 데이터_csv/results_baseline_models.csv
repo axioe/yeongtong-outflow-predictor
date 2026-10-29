@@ -1,0 +1,9 @@
+﻿model,split,Accuracy,Precision,Recall,F1,ROC-AUC
+Baseline: last month,Test,0.5972,0.65,0.6341,0.642,
+Baseline: same month last year,Test,0.5764,0.6154,0.6829,0.6474,
+Logistic Regression,Train,0.8026,0.8027,0.8806,0.8399,0.8845
+Logistic Regression,Test,0.5972,0.6176,0.7683,0.6848,0.6107
+Random Forest,Train,1.0,1.0,1.0,1.0,1.0
+Random Forest,Test,0.6389,0.6705,0.7195,0.6941,0.6356
+XGBoost,Train,1.0,1.0,1.0,1.0,1.0
+XGBoost,Test,0.6597,0.6701,0.7927,0.7263,0.6253

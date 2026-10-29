@@ -1,0 +1,3 @@
+﻿method,n_combinations,best_cv_roc_auc,test_Accuracy,test_Precision,test_Recall,test_F1,test_ROC-AUC,gap_Accuracy,seconds,best_params
+GridSearchCV,54,0.6613,0.6111,0.63,0.7683,0.6923,0.6467,0.1652,35.5,"{'max_depth': 2, 'min_samples_leaf': 5, 'min_samples_split': 20, 'n_estimators': 200}"
+RandomizedSearchCV,20,0.6861,0.6042,0.6263,0.7561,0.6851,0.6387,0.1809,13.7,"{'max_depth': 3, 'min_samples_leaf': 27, 'min_samples_split': 48, 'n_estimators': 261}"

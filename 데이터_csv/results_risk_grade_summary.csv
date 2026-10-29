@@ -1,0 +1,4 @@
+﻿risk_grade,rows,mean_outflow_prob,actual_outflow_ratio,mean_expected_decrease,mean_actual_pop_chg,total_actual_pop_chg
+LOW,74,0.5366,0.473,17.1621,3.8108,282
+MEDIUM,41,0.6242,0.6341,29.8633,-26.0488,-1068
+HIGH,29,0.631,0.7241,45.415,-22.7586,-660

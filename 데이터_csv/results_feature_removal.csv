@@ -1,0 +1,6 @@
+﻿experiment,n_features,train_rows,train_start,test_rows,test_Accuracy,test_Precision,test_Recall,test_F1,test_ROC-AUC,removed_or_added,diff_ROC-AUC_vs_base
+Base (all features),14,228,2024-03,144,0.625,0.6429,0.7683,0.7,0.6483,,0.0
+Without price features,9,240,2024-02,144,0.6181,0.6216,0.8415,0.715,0.6393,"price_chg_1m, price_chg_1m_lag2, price_chg_1m_lag3, price_chg_3m, price_m2",-0.009
+Price features only,7,228,2024-03,144,0.6528,0.6311,0.939,0.7549,0.6273,"build_year_avg, hh_size_lag1, new_ratio, pop_chg_rate_lag1, population_lag1, trade_cnt, trade_cnt_3m",-0.021
+Add price_chg_12m,15,120,2024-12,144,0.6389,0.6316,0.878,0.7347,0.6692,price_chg_12m,0.0208
+Drop low importance,13,228,2024-03,144,0.5972,0.62,0.7561,0.6813,0.6456,price_chg_1m,-0.0028
