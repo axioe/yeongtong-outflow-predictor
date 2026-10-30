@@ -1,4 +1,4 @@
-# 코드·데이터·모델(Streamlit 배포용)만 올리고 나머지(보고서, 원본 엑셀, 예시 자료, 그림 등)는 제외
+# 코드·데이터·모델(Streamlit 배포용)·README 그림만 올리고 나머지(보고서, 원본 엑셀, 예시 자료 등)는 제외
 /*
 !/.gitignore
 !/code/
@@ -6,6 +6,13 @@
 !/model/
 !/packages.txt
 !/README.md
+!/figures/
+
+# README에 쓰지 않는 그림·중간 파일은 제외
+/figures/*.csv
+/figures/table_*.png
+/figures/*_left.png
+/figures/*_right.png
 
 __pycache__/
 *.pyc
