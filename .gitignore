@@ -5,6 +5,7 @@
 !/데이터_csv/
 !/model/
 !/packages.txt
+!/README.md
 
 __pycache__/
 *.pyc
